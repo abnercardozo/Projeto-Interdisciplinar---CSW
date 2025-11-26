@@ -1,0 +1,166 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body {
+    background: #707680;
+}
+
+/* TOPO */
+.top-bar {
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 260px;
+    background: #0f3f78;
+    height: 93vh;
+    color: white;
+    padding-top: 20px;
+}
+
+.logo-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px;
+}
+
+/* CONTEÚDO */
+.content {
+    width: 100%;
+    padding: 20px 40px;
+    background: white;
+    min-height: 93vh;
+}
+
+/* SEARCH */
+.search-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #bbb;
+}
+
+.bell {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.title {
+    margin: 25px 0;
+    background: #c5d3e8;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* FILTROS */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.filter {
+    background: #f7c79d;
+    padding: 7px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sol-card {
+    width: 80%;
+    height: 95px;
+    border-radius: 12px;
+    display: flex;
+    border: 2px solid #a9bbd6;
+    overflow: hidden;
+}
+
+.left {
+    width: 65%;
+    padding: 15px;
+    background: #d0ddf0;
+}
+
+.left h3 {
+    font-size: 18px;
+}
+
+.right {
+    width: 35%;
+    background: #d0ddf0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.approved {
+    background: #e4f0ff;
+}
+
+.check {
+    font-size: 28px;
+    color: #1c4f91;
+}
+
+.status-text {
+    color: #e58a47;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* RODAPÉ */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #555;
+}
