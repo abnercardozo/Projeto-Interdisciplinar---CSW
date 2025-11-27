@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Histórico de Horas Extras | Fortes Horas +</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/gestor/historico.css" />
+</head>
+<body>
+
+
+  <div class="layout">
+
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-circle">
+          <img src="imagens/relogio.png" alt="Logo relógio" class="logo-img">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Fortes Horas <strong>+</strong></span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#" class="menu-item">
+          <span class="icon">▦</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="historico_gestor.html" class="menu-item active">
+          <span class="icon">🧾</span>
+          <span>Histórico de H.E</span>
+        </a>
+
+        <a href="aprovacao.html" class="menu-item">
+          <span class="icon">✓</span>
+          <span>Aprovar Hora Extra</span>
+          </a>
+
+        <a href="#" class="menu-item">
+          <span class="icon">☑</span>
+          <span>Registro de Aprovação</span>
+        </a>
+
+        <div class="menu-divider"></div>
+
+        <a href="#" class="menu-item">
+          <span class="icon">👤</span>
+          <span>Perfil</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span class="icon">❓</span>
+          <span>FAQ</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span class="icon">↩</span>
+          <span>Sair</span>
+          </a>
+
+      </nav>
+    </aside>
+
+
+    <main class="main">
+
+      
+      <header class="main-header">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Pesquisar..." />
+          <button class="search-icon">🔍</button>
+        </div>
+
+        <div class="user-box">
+          <span class="user-hello">Olá, Kayke!</span>
+          <span class="user-date">16 de novembro de 2025</span>
+          <span class="user-avatar">👤</span>
+        </div>
+      </header>
+
+   
+      <section class="title-bar">
+        <h1>HISTÓRICO DE HORAS EXTRAS</h1>
+      </section>
+
+     
+      <section class="filters-area">
+        <div class="tabs">
+          <button class="tab active" data-target="negadas">
+            Negadas <span class="tab-arrow">▾</span>
+          </button>
+          <button class="tab" data-target="mes">
+            Este Mês <span class="tab-arrow">▾</span>
+          </button>
+        </div>
+
+        <div class="alert-pill" id="pill-negadas">
+          6 Solicitações negadas pelo seu gestor
+        </div>
+
+        <div class="alert-pill hide" id="pill-mes">
+          3 Solicitações registradas neste mês
+        </div>
+      </section>
+
+
+      <section class="cards-wrapper">
+
+        <div id="lista-negadas" class="cards-list">
+
+        
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Kayke</h2>
+              <p class="date">10/10/2025</p>
+              <p class="hours">12 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-middle">
+              <span class="label">JUSTIFICATIVA</span>
+              <p>Excede o limite diário permitido pela empresa.</p>
+            </div>
+
+            <div class="card-col card-col-right">
+              <div class="status-circle">
+                <span class="ban-icon">🚫</span>
+              </div>
+              <span class="status-text">Status: Negado</span>
+            </div>
+          </article>
+
+
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Abner</h2>
+              <p class="date">08/10/2025</p>
+              <p class="hours">1,5 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-middle">
+              <span class="label">JUSTIFICATIVA</span>
+              <p>Excede o limite diário permitido pela empresa.</p>
+            </div>
+
+            <div class="card-col card-col-right">
+              <div class="status-circle">
+                <span class="ban-icon">🚫</span>
+              </div>
+              <span class="status-text">Status: Negado</span>
+            </div>
+          </article>
+
+          
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Richards</h2>
+              <p class="date">04/10/2025</p>
+              <p class="hours">1 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-middle">
+              <span class="label">JUSTIFICATIVA</span>
+              <p>Excede o limite diário permitido pela empresa.</p>
+            </div>
+
+            <div class="card-col card-col-right">
+              <div class="status-circle">
+                <span class="ban-icon">🚫</span>
+              </div>
+              <span class="status-text">Status: Negado</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="lista-mes" class="cards-list hide">
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Kayke</h2>
+              <p class="date">12/11/2025</p>
+              <p class="hours">4 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-middle">
+              <span class="label">DETALHES</span>
+              <p>Horas extras realizadas para fechamento de relatório.</p>
+            </div>
+
+            <div class="card-col card-col-right">
+              <div class="status-circle status-analise">
+                <span class="ban-icon">⏳</span>
+              </div>
+              <span class="status-text status-analise-text">
+                Status: Em análise
+              </span>
+            </div>
+          </article>
+        </div>
+
+
+        <div class="scroll-bar-fake"></div>
+
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    © 2025 | Fortes Engenharia | <a href="tel:+552733258883">(27) 3325-8883</a>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/historico.js"></script>
+</body>
+</html>

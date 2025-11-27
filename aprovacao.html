@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aprovar Hora Extra | Fortes Horas +</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="css/gestor/aprovacao.css" />
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-circle">
+          <img src="imagens/relogio.png" class="logo-img" alt="Relógio">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Fortes Horas <strong>+</strong></span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#" class="menu-item">
+          <span class="icon">▦</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="historico_gestor.html" class="menu-item">
+          <span class="icon">🧾</span>
+          <span>Histórico de H.E</span>
+        </a>
+
+        <a href="aprovacao.html" class="menu-item active">
+          <span class="icon">✓</span>
+          <span>Aprovar Hora Extra</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span class="icon">☑</span>
+          <span>Registro de Aprovação</span>
+        </a>
+
+        <div class="menu-divider"></div>
+
+        <a href="#" class="menu-item">
+          <span class="icon">👤</span>
+          <span>Perfil</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span class="icon">❓</span>
+          <span>FAQ</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+          <span class="icon">↩</span>
+          <span>Sair</span>
+        </a>
+      </nav>
+    </aside>
+
+
+    <main class="main">
+   
+      <header class="main-header">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Pesquisar..." />
+          <button class="search-icon">🔍</button>
+        </div>
+
+        <div class="user-box">
+          <span class="user-hello">Olá, Kayke!</span>
+          <span class="user-date">16 de novembro de 2025</span>
+          <span class="user-avatar">👤</span>
+        </div>
+      </header>
+
+      
+      <section class="title-bar">
+        <h1>HORAS EXTRAS</h1>
+      </section>
+
+    
+      <section class="filters-area">
+        <div class="filters-row">
+          <button class="filter-chip">
+            Este Mês <span class="arrow">▾</span>
+          </button>
+          <button class="filter-chip">
+            Projeto <span class="arrow">▾</span>
+          </button>
+          <button class="filter-chip">
+            Período <span class="arrow">▾</span>
+          </button>
+          <button class="filter-chip">
+            Status <span class="arrow">▾</span>
+          </button>
+        </div>
+      </section>
+
+  
+      <section class="cards-wrapper">
+
+        <div class="cards-list">
+        
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Kayke</h2>
+              <p class="date">10/10/2025</p>
+              <p class="hours">12 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-center">
+              <div class="status-circle status-analise">
+                <span class="status-icon">⏳</span>
+              </div>
+              <span class="status-text status-analise-text">
+                Status: Em análise
+              </span>
+            </div>
+
+            <div class="card-col card-col-right">
+              <button class="btn-action btn-aceitar">ACEITAR</button>
+              <button class="btn-action btn-recusar">RECUSAR</button>
+            </div>
+          </article>
+
+          
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Abner</h2>
+              <p class="date">08/10/2025</p>
+              <p class="hours">15 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-center">
+              <div class="status-circle status-analise">
+                <span class="status-icon">⏳</span>
+              </div>
+              <span class="status-text status-analise-text">
+                Status: Em análise
+              </span>
+            </div>
+
+            <div class="card-col card-col-right">
+              <button class="btn-action btn-aceitar">ACEITAR</button>
+              <button class="btn-action btn-recusar">RECUSAR</button>
+            </div>
+          </article>
+
+          
+          <article class="card">
+            <div class="card-col card-col-left">
+              <h2>Richards</h2>
+              <p class="date">04/10/2025</p>
+              <p class="hours">11 HORAS</p>
+            </div>
+
+            <div class="card-col card-col-center">
+              <div class="status-circle status-analise">
+                <span class="status-icon">⏳</span>
+              </div>
+              <span class="status-text status-analise-text">
+                Status: Em análise
+              </span>
+            </div>
+
+            <div class="card-col card-col-right">
+              <button class="btn-action btn-aceitar">ACEITAR</button>
+              <button class="btn-action btn-recusar">RECUSAR</button>
+            </div>
+          </article>
+        </div>
+
+   
+        <div class="scroll-bar-fake"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    © 2025 | Fortes Engenharia | <a href="tel:+552733258883">(27) 3325-8883</a>
+  </footer>
+
+  <script src="js/aprovacao.js"></script>
+</body>
+</html>
