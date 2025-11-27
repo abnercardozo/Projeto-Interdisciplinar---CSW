@@ -7,8 +7,8 @@ function login() {
         return;
     }
 
-    if (matricula === "gerente" && senha === "123456") {
-        window.location.href = "dashboard_gestor.html";
+    if (matricula === "gestor" && senha === "123456") {
+        window.location.href = "historico_gestor.html";
         return;
     }
 
@@ -24,3 +24,4 @@ function login() {
 
     alert("Usuário ou senha incorretos!");
 }
+
