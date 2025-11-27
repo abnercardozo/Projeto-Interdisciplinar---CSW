@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Técnico</title>
+    <link rel="icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/tec/dashboard_tecnico.css">
+    
+
+     <script defer src="js/dashbord_tec.js"></script>
+</head>
+
+<body>
+
+<header class="top-bar">
+    <span class="page-title">DASHBOARD | TÉCNICO</span>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo-box">
+            <img src="/imagens/relogio.png" class="logo">
+            <h2>Fortes Horas +</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard_tecnico.html" class="menu-item active">📊 Dashboard</a>
+            <a href="solicitar_tecnico.html" class="menu-item">⏱ Solicitar Hora Extra</a>
+            <a href="status_tecnico.html" class="menu-item">✔ Status</a>
+            <a href="#" class="menu-item">👤 Perfil</a>
+            <a href="#" class="menu-item">❓ FAQ</a>
+            <a href="index.html" class="menu-item">🔙 Sair</a>
+        </nav>
+    </aside>
+    <main class="content">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button class="bell">🔔</button>
+        </div>
+
+        <h1 class="title">Olá, Técnico!</h1>
+        <p class="subtitle">16 de novembro de 2025</p>
+
+        <section class="dashboard-grid">
+            <div class="card large">
+                <h3>Horas Extras Semanais</h3>
+                <canvas id="graficoSemanal"></canvas>
+            </div>
+
+            <div class="card medium">
+                <h3>Total de Horas Trabalhadas</h3>
+                <canvas id="graficoPizza"></canvas>
+
+                <div class="legendas">
+                    <p><span class="legenda cor1"></span> Horas Extras</p>
+                    <p><span class="legenda cor2"></span> Horas Normais</p>
+                </div>
+            </div>
+
+            <div class="card small highlight">
+                <h3>Valor Acumulado em R$</h3>
+                <div class="big-value">R$150,06</div>
+            </div>
+
+         
+            <div class="card small highlight">
+                <h3>Limite Semanal Restante</h3>
+                <div class="big-value">2h 35min</div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            © 2025 | Fortes Engenharia | (27) 3325-8883
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard_tecnico.js"></script>
+
+</body>
+</html>
